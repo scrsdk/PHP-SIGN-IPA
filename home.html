@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIGN IPA</title>
+</head>
+<body>
+    <h1>Подпись IPA</h1>
+    <form method="POST" action="sign.php" enctype="multipart/form-data">
+        <label for="certificate">Certificate (p12):</label>
+        <input type="file" name="certificate" required><br>
+        <label for="mobileprovision">Certificate (mobileprovision):</label>
+        <input type="file" name="mobileprovision" required><br>
+        <label for="ipa">Apps (ipa):</label>
+        <input type="file" name="ipa" required><br>
+        <label for="pass">Certificate пароль:</label>
+        <input type="password" name="pass" required><br>
+        <input type="submit" value="Подписать">
+    </form>
+</body>
+</html>
